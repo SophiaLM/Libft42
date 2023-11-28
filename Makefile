@@ -60,16 +60,16 @@ OBJ = $(SRC:%.c=%.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
+	$(LIB) $(NAME) $(OBJ)
 
 %.o: %.c
-	gcc $(CFLAGS) -c $^ -o $@
+	$(CC) $(CFLAGS) -c $^ -o $@
 
 clean:
-	rm $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean
-	rm $(NAME)
+	$(RM) $(NAME)
 
 re:	fclean all
 
