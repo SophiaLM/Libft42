@@ -6,14 +6,14 @@
 /*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 06:37:24 by soluna            #+#    #+#             */
-/*   Updated: 2023/11/28 06:37:26 by soluna           ###   ########.fr       */
+/*   Updated: 2023/11/29 17:05:14 by soluna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //copia n bytes en la memoria, de src a dst, sin overlap.
 #include "libft.h"
 
-void	 *ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	char	*destino;
 	char	*origen;

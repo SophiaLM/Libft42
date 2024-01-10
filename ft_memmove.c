@@ -6,7 +6,7 @@
 /*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 06:37:35 by soluna            #+#    #+#             */
-/*   Updated: 2023/11/28 06:37:37 by soluna           ###   ########.fr       */
+/*   Updated: 2023/11/29 17:06:09 by soluna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (!src && !dest)
 		return (dest);
 	if (destino >= origen)
-		while(n--)
+		while (n--)
 			destino[n] = origen[n];
 	else
 		ft_memcpy(destino, origen, n);

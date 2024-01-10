@@ -6,7 +6,7 @@
 /*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 06:41:34 by soluna            #+#    #+#             */
-/*   Updated: 2023/11/28 06:41:36 by soluna           ###   ########.fr       */
+/*   Updated: 2023/11/29 18:03:26 by soluna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ size_t	count_word(char	*str, char c)
 	return (count);
 }
 
-size_t len_word(char *s, char c, size_t start)
+size_t	len_word(char *s, char c, size_t start)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (s[start] && s[start] != c)
@@ -78,7 +78,7 @@ char	**divisor(char *str1, char c, char **array, size_t len)
 			j++;
 		i++;
 	}
-	array[i] = '\0';
+	array[i] = NULL;
 	return (array);
 }
 

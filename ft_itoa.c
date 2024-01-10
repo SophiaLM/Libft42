@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/29 17:00:46 by soluna            #+#    #+#             */
+/*   Updated: 2023/11/29 17:10:07 by soluna           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //pasar un numero entero a una cadena.
 #include "libft.h"
 
@@ -34,8 +46,8 @@ char	*mats(int n, int contador, char *re, int j)
 char	*ft_itoa(int n)
 {
 	char	*result;
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 
 	j = 1;
 	if (n < 0)

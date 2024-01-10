@@ -6,7 +6,7 @@
 /*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 06:41:01 by soluna            #+#    #+#             */
-/*   Updated: 2023/11/28 06:41:03 by soluna           ###   ########.fr       */
+/*   Updated: 2023/11/29 17:06:33 by soluna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*s3;
-	int	i;
-	int	j;
-	int	g;
+	int		i;
+	int		j;
+	int		g;
 
 	s3 = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!s3)

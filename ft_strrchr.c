@@ -6,13 +6,13 @@
 /*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 06:38:55 by soluna            #+#    #+#             */
-/*   Updated: 2023/11/28 06:38:56 by soluna           ###   ########.fr       */
+/*   Updated: 2023/11/29 17:07:46 by soluna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 

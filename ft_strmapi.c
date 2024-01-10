@@ -6,7 +6,7 @@
 /*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 06:42:09 by soluna            #+#    #+#             */
-/*   Updated: 2023/11/28 06:42:13 by soluna           ###   ########.fr       */
+/*   Updated: 2023/11/29 17:07:14 by soluna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*len;
+	char			*len;
 	unsigned int	i;
 
 	i = 0;

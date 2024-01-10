@@ -6,7 +6,7 @@
 /*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 06:40:18 by soluna            #+#    #+#             */
-/*   Updated: 2023/11/28 06:40:19 by soluna           ###   ########.fr       */
+/*   Updated: 2023/11/29 17:11:23 by soluna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 int	ft_atoi(const char *str)
 {
-	int     res;
-	int     sign;
+	int	res;
+	int	sign;
 
 	res = 0;
 	sign = 1;
