@@ -6,7 +6,7 @@
 /*   By: soluna <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 06:38:02 by soluna            #+#    #+#             */
-/*   Updated: 2023/11/28 06:38:04 by soluna           ###   ########.fr       */
+/*   Updated: 2024/01/14 17:04:37 by soluna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,10 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 /*#include <stdio.h>
 int	main()
 {
-	char	dest[20] = "Hola ";
+	char	dest[7] = "Hola ";
 	char	src[5] = "Mundo";
 
-	printf("%d\n", ft_strlcat(dest, src, 10));
+	printf("%d\n", ft_strlcat(dest, src, 7));
+	printf("%s\n", dest);
 	return (0);
 }*/
