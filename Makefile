@@ -6,7 +6,7 @@
 #    By: soluna <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/28 06:35:11 by soluna            #+#    #+#              #
-#    Updated: 2023/11/29 19:11:29 by soluna           ###   ########.fr        #
+#    Updated: 2024/02/11 21:30:40 by soluna           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,22 +55,29 @@ SRC = ft_isalpha.c \
       ft_putendl_fd.c \
       ft_putnbr_fd.c 
 
+SRCBONUS = ft_lstnew.c 
+
 OBJ = $(SRC:%.c=%.o)
+
+OBJBONUS = $(SRCBONUS:%.c=%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(LIB) $(NAME) $(OBJ)
 
+bonus: $(OBJBONUS)
+	$(LIB) $(NAME) $(OBJBONUS)
+
 %.o: %.c
 	$(CC) $(CFLAGS) -c $^ -o $@
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(SRCBONUS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re:	fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re
