@@ -12,6 +12,8 @@
 
 NAME = libft.a
 
+BONUS_N = .bonus
+
 LIB = ar rcs
 
 CFLAGS = -Wall -Wextra -Werror
@@ -55,7 +57,14 @@ SRC = ft_isalpha.c \
       ft_putendl_fd.c \
       ft_putnbr_fd.c 
 
-SRCBONUS = ft_lstnew.c 
+SRCBONUS = ft_lstnew.c \
+	ft_lstsize.c \
+	ft_lstadd_front.c \
+	ft_lstlast.c \
+	ft_lstadd_back.c \
+	ft_lstdelone.c \
+	ft_lstclear.c \
+	ft_lstiter.c \
 
 OBJ = $(SRC:%.c=%.o)
 
@@ -73,7 +82,7 @@ bonus: $(OBJBONUS)
 	$(CC) $(CFLAGS) -c $^ -o $@
 
 clean:
-	$(RM) $(OBJ) $(SRCBONUS)
+	$(RM) $(OBJ) $(OBJBONUS)
 
 fclean: clean
 	$(RM) $(NAME)
