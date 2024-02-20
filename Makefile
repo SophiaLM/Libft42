@@ -6,7 +6,7 @@
 #    By: soluna <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/28 06:35:11 by soluna            #+#    #+#              #
-#    Updated: 2024/02/11 21:30:40 by soluna           ###   ########.fr        #
+#    Updated: 2024/02/20 17:25:34 by soluna           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,14 +57,14 @@ SRC = ft_isalpha.c \
       ft_putendl_fd.c \
       ft_putnbr_fd.c 
 
-SRCBONUS = ft_lstnew.c \
-	ft_lstsize.c \
-	ft_lstadd_front.c \
-	ft_lstlast.c \
-	ft_lstadd_back.c \
-	ft_lstdelone.c \
-	ft_lstclear.c \
-	ft_lstiter.c \
+SRCBONUS = ft_lstnew_bonus.c \
+	ft_lstsize_bonus.c \
+	ft_lstadd_front_bonus.c \
+	ft_lstlast_bonus.c \
+	ft_lstadd_back_bonus.c \
+	ft_lstdelone_bonus.c \
+	ft_lstclear_bonus.c \
+	ft_lstiter_bonus.c
 
 OBJ = $(SRC:%.c=%.o)
 
