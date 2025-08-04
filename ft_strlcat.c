@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//concatena cadenas de manera segurai. Retorna la longitud de len + src.
 #include "libft.h"
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
@@ -33,13 +32,3 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	dest[lendest] = '\0';
 	return (lensrc);
 }
-/*#include <stdio.h>
-int	main()
-{
-	char	dest[7] = "Hola";
-	char	src[5] = "Mundo";
-
-	printf("%d\n", ft_strlcat(dest, src, 7));
-	printf("%s\n", dest);
-	return (0);
-}*/

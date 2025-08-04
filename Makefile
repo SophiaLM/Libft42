@@ -22,6 +22,14 @@ CC = gcc
 
 RM = rm -f
 
+PASTEL_PINK = \033[38;5;218m
+
+STRONG_PINK = \033[38;5;204m
+
+LILAC = \033[38;5;141m
+
+RESET = \033[0m
+
 SRC = ft_isalpha.c \
       ft_isdigit.c \
       ft_isalnum.c \
@@ -70,22 +78,28 @@ OBJ = $(SRC:%.c=%.o)
 
 OBJBONUS = $(SRCBONUS:%.c=%.o)
 
-all: $(NAME)
+all: $(NAME) compilacion_completa
 
 $(NAME): $(OBJ)
-	$(LIB) $(NAME) $(OBJ)
+	@$(LIB) $(NAME) $(OBJ)
 
 bonus: $(OBJBONUS)
 	$(LIB) $(NAME) $(OBJBONUS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $^ -o $@
+	@echo "$(PASTEL_PINK)compiling $(STRONG_PINK)$<..."
+	@$(CC) $(CFLAGS) -c $< -o $@
+
+compilacion_completa:
+	@echo "$(LILAC)Program ready to be executed!✔"
 
 clean:
-	$(RM) $(OBJ) $(OBJBONUS)
+	@echo "$(LILAC)Successfully removed object file"
+	@$(RM) $(OBJ) $(OBJBONUS)
 
 fclean: clean
-	$(RM) $(NAME)
+	@echo "$(LILAC)Full cleanup completed"
+	@$(RM) $(NAME)
 
 re:	fclean all
 

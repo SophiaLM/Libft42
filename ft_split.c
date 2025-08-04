@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//te divide una cadena en subcadenas segun el delimitador
-//y las coloca dentro de una matriz;
 #include "libft.h"
 
 size_t	count_word(char	*str, char c)
@@ -96,19 +94,3 @@ char	**ft_split(char const *s, char c)
 	array = divisor((char *)s, c, array, words);
 	return (array);
 }
-
-/*int	main()
-{
-	int	i;
-	char	*s = "Hola mundo Adios Mundo ";
-	char	c = ' ';
-	char	**result = ft_split(s, c);
-
-	i = 0;
-	while (result[i])
-	{
-		printf("%s\n", result[i]);
-		i++;
-	}
-	return (0);
-}*/

@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//pasar un numero entero a una cadena.
 #include "libft.h"
 
 int	count(int n, int j)
@@ -65,12 +64,3 @@ char	*ft_itoa(int n)
 		return (NULL);
 	return (mats(n, i, result, j));
 }
-/*
-int     main()
-{
-	int	n = 123;
-	char    *result = ft_itoa(n);
-
-	printf("%s\n", result);
-}
-*/
